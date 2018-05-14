@@ -73,6 +73,12 @@ type MarshalIncludedRelations interface {
 	GetReferencedStructs() []MarshalIdentifier
 }
 
+// The MarshalCustomAttributes interface can be implemented if the struct
+// should want more control of the fields included in the document.
+type MarshalCustomAttributes interface {
+	GetAttributes() (json.RawMessage, error)
+}
+
 // The MarshalCustomLinks interface can be implemented if the struct should
 // want any custom links.
 type MarshalCustomLinks interface {
@@ -231,12 +237,20 @@ func marshalData(element MarshalIdentifier, data *Data, information ServerInform
 		return errors.New("MarshalIdentifier must not be nil")
 	}
 
-	attributes, err := json.Marshal(element)
-	if err != nil {
-		return err
+	if customAttributer, ok := element.(MarshalCustomAttributes); ok {
+		attributes, err := customAttributer.GetAttributes()
+		if err != nil {
+			return err
+		}
+		data.Attributes = attributes
+	} else {
+		attributes, err := json.Marshal(element)
+		if err != nil {
+			return err
+		}
+		data.Attributes = attributes
 	}
 
-	data.Attributes = attributes
 	data.ID = element.GetID()
 	data.Type = getStructType(element)
 
