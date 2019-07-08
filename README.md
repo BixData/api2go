@@ -1,10 +1,10 @@
 # api2go
 
-[![Join the chat at https://gitter.im/BixData/api2go](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/BixData/api2go?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-[![GoDoc](https://godoc.org/github.com/BixData/api2go?status.svg)](https://godoc.org/github.com/BixData/api2go)
-[![Build Status](https://travis-ci.org/BixData/api2go.svg?branch=master)](https://travis-ci.org/BixData/api2go)
-[![Coverage Status](https://coveralls.io/repos/github/BixData/api2go/badge.svg?branch=master)](https://coveralls.io/github/BixData/api2go?branch=master)
-[![Go Report Card](https://goreportcard.com/badge/BixData/api2go)](https://goreportcard.com/report/BixData/api2go)
+[![Join the chat at https://gitter.im/nubix-io/api2go](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/nubix-io/api2go?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![GoDoc](https://godoc.org/github.com/nubix-io/api2go?status.svg)](https://godoc.org/github.com/nubix-io/api2go)
+[![Build Status](https://travis-ci.org/nubix-io/api2go.svg?branch=master)](https://travis-ci.org/nubix-io/api2go)
+[![Coverage Status](https://coveralls.io/repos/github/nubix-io/api2go/badge.svg?branch=master)](https://coveralls.io/github/nubix-io/api2go?branch=master)
+[![Go Report Card](https://goreportcard.com/badge/nubix-io/api2go)](https://goreportcard.com/report/nubix-io/api2go)
 
 A [JSON API](http://jsonapi.org) Implementation for Go, to be used e.g. as server for [Ember Data](https://github.com/emberjs/data).
 
@@ -39,12 +39,12 @@ This fork was originally created to allow for specifying a 'jsonapi' struct tag 
 
 For the complete api2go package use:
 ```go
-go get github.com/BixData/api2go
+go get github.com/nubix-io/api2go
 ```
 
 If you only need marshalling and/or unmarshalling:
 ```
-go get github.com/BixData/api2go/jsonapi
+go get github.com/nubix-io/api2go/jsonapi
 ```
 
 ## Basic functionality
@@ -97,7 +97,7 @@ All the additional information is retrieved by implementing some interfaces.
 
 ## Examples
 
-- Basic Examples can be found [here](https://github.com/BixData/api2go/blob/master/examples/crud_example.go).
+- Basic Examples can be found [here](https://github.com/nubix-io/api2go/blob/master/examples/crud_example.go).
 - For a more real life example implementation of api2go using [jinzhu/gorm](https://github.com/jinzhu/gorm) and [gin-gonic/gin](https://github.com/gin-gonic/gin) you can have a look at hnakamur's [repository](https://github.com/hnakamur/api2go-gorm-gin-crud-example)
 
 ## Interfaces to implement
@@ -248,7 +248,7 @@ type UnmarshalToManyRelations interface {
 ## Manual marshalling / unmarshalling
 Please keep in mind that this only works if you implemented the previously mentioned interfaces. Manual marshalling and
 unmarshalling makes sense, if you do not want to use our API that automatically generates all the necessary routes for you. You
-can directly use our sub-package `github.com/BixData/api2go/jsonapi`
+can directly use our sub-package `github.com/nubix-io/api2go/jsonapi`
 
 ```go
 comment1 = Comment{ID: 1, Text: "First!"}
@@ -337,7 +337,7 @@ In order to use omitempty with those types, you need to specify them as pointers
 If you want to use api2go with [gin](https://github.com/gin-gonic/gin) you need to use a different router than the default one.
 Get the according adapter using:
 
-```go get -tags=gingonic github.com/BixData/api2go```
+```go get -tags=gingonic github.com/nubix-io/api2go```
 
 Currently the supported tags are: `gingonic`,`gorillamux`, or `echo`.
 
@@ -345,11 +345,11 @@ After that you can bootstrap api2go the following way:
 ```go
   import (
     "github.com/gin-gonic/gin"
-    "github.com/BixData/api2go"
-    "github.com/BixData/api2go/routing"
-    "github.com/BixData/api2go/examples/model"
-    "github.com/BixData/api2go/examples/resource"
-    "github.com/BixData/api2go/examples/storage"
+    "github.com/nubix-io/api2go"
+    "github.com/nubix-io/api2go/routing"
+    "github.com/nubix-io/api2go/examples/model"
+    "github.com/nubix-io/api2go/examples/resource"
+    "github.com/nubix-io/api2go/examples/storage"
   )
 
   func main() {

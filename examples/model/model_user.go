@@ -3,7 +3,7 @@ package model
 import (
 	"errors"
 
-	"github.com/BixData/api2go/jsonapi"
+	"github.com/nubix-io/api2go/jsonapi"
 )
 
 // User is a generic database user

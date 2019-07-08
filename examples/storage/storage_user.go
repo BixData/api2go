@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/BixData/api2go"
-	"github.com/BixData/api2go/examples/model"
+	"github.com/nubix-io/api2go"
+	"github.com/nubix-io/api2go/examples/model"
 )
 
 // NewUserStorage initializes the storage

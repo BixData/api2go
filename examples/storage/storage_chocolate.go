@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"sort"
 
-	"github.com/BixData/api2go/examples/model"
+	"github.com/nubix-io/api2go/examples/model"
 )
 
 // sorting

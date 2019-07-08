@@ -6,9 +6,9 @@ import (
 	"sort"
 	"strconv"
 
-	"github.com/BixData/api2go"
-	"github.com/BixData/api2go/examples/model"
-	"github.com/BixData/api2go/examples/storage"
+	"github.com/nubix-io/api2go"
+	"github.com/nubix-io/api2go/examples/model"
+	"github.com/nubix-io/api2go/examples/storage"
 )
 
 // UserResource for api2go routes

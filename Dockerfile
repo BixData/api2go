@@ -7,8 +7,8 @@ ARG BUILD_VERSION=0.0.0
 # Add sources and install dependencies
 # ============================================================
 
-COPY . $GOPATH/src/github.com/BixData/api2go
-WORKDIR $GOPATH/src/github.com/BixData/api2go
+COPY . $GOPATH/src/github.com/nubix-io/api2go
+WORKDIR $GOPATH/src/github.com/nubix-io/api2go
 RUN go get -u github.com/jstemmer/go-junit-report
 RUN go get -u github.com/golang/dep/cmd/dep
 RUN dep ensure -v

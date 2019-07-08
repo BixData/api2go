@@ -5,10 +5,10 @@ import (
 	"net/http/httptest"
 	"strings"
 
-	"github.com/BixData/api2go"
-	"github.com/BixData/api2go/examples/model"
-	"github.com/BixData/api2go/examples/resource"
-	"github.com/BixData/api2go/examples/storage"
+	"github.com/nubix-io/api2go"
+	"github.com/nubix-io/api2go/examples/model"
+	"github.com/nubix-io/api2go/examples/resource"
+	"github.com/nubix-io/api2go/examples/storage"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 )

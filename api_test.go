@@ -10,8 +10,8 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/BixData/api2go/jsonapi"
-	"github.com/BixData/api2go/routing"
+	"github.com/nubix-io/api2go/jsonapi"
+	"github.com/nubix-io/api2go/routing"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 	"gopkg.in/guregu/null.v2"

@@ -46,11 +46,11 @@ import (
 	"net/http"
 
 	"github.com/julienschmidt/httprouter"
-	"github.com/BixData/api2go"
-	"github.com/BixData/api2go/examples/model"
-	"github.com/BixData/api2go/examples/resolver"
-	"github.com/BixData/api2go/examples/resource"
-	"github.com/BixData/api2go/examples/storage"
+	"github.com/nubix-io/api2go"
+	"github.com/nubix-io/api2go/examples/model"
+	"github.com/nubix-io/api2go/examples/resolver"
+	"github.com/nubix-io/api2go/examples/resource"
+	"github.com/nubix-io/api2go/examples/storage"
 )
 
 func main() {

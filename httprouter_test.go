@@ -5,7 +5,7 @@ package api2go
 import (
 	"log"
 
-	"github.com/BixData/api2go/routing"
+	"github.com/nubix-io/api2go/routing"
 )
 
 func newTestRouter() routing.Routeable {

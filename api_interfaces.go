@@ -3,7 +3,7 @@ package api2go
 import (
 	"net/http"
 
-	"github.com/BixData/api2go/jsonapi"
+	"github.com/nubix-io/api2go/jsonapi"
 )
 
 // The ResourceGetter interface MUST be implemented in order to generate the single GET route and related

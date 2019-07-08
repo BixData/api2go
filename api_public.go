@@ -5,8 +5,8 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/BixData/api2go/jsonapi"
-	"github.com/BixData/api2go/routing"
+	"github.com/nubix-io/api2go/jsonapi"
+	"github.com/nubix-io/api2go/routing"
 )
 
 // HandlerFunc for api2go middlewares

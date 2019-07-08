@@ -7,7 +7,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/BixData/api2go/jsonapi"
+	"github.com/nubix-io/api2go/jsonapi"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 )

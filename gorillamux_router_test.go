@@ -6,7 +6,7 @@ import (
 	"log"
 
 	"github.com/gorilla/mux"
-	"github.com/BixData/api2go/routing"
+	"github.com/nubix-io/api2go/routing"
 )
 
 func newTestRouter() routing.Routeable {
